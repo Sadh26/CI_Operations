@@ -27,9 +27,7 @@ jobs:
 
       - name: Run a script
         run: |
-          echo Hello World!
-          sleep 10
-          echo END
-          
+          LabVIEWCLI -OperationName RunVI -VIPath "C:\Users\sadhana.suresh\Documents\GIT\YouTube_Trial\LabviewJenkinsExample\VIPM_build_trial.vi"
+        shell: cmd 
 
       
