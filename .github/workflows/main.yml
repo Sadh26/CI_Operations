@@ -5,10 +5,10 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  # push:
-  #   branches: ["main"]
-  # pull_request:
-  #   branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,9 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Run a script
+      - name: Build exe
         run: |
-          LabVIEWCLI -OperationName RunVI -VIPath "C:\Users\sadhana.suresh\Documents\GIT\YouTube_Trial\LabviewJenkinsExample\VIPM_build_trial.vi"
-        shell: cmd 
-
+          LabVIEWCLI -OperationName ExecuteBuildSpec -ProjectPath "C:\Users\sadhana.suresh\Documents\GIT\YouTube_Trial\LabviewJenkinsExample\LabviewJenkinsExample.lvproj" -TargetName "My Computer" -BuildSpecName "App"
+    
       
