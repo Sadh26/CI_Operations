@@ -25,8 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Testing G-CLI
+      - name: Open and Run a VI
         run: |
-          g-cli --lv-ver 2020  echo --Hello
+          "C:\Program Files\G-CLI\bin\g-cli.exe" --lv-ver 2020 --arch 64 "${{ github.workspace }}\Operations\Add.vi"
     
-      
