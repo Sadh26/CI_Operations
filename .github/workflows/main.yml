@@ -27,6 +27,6 @@ jobs:
 
       - name: Open and run a VI
         run: |
-          "C:\Program Files\G-CLI\bin\g-cli.exe" --lv-ver 2020 --arch 64 "C:\Users\sadhana.suresh\Documents\GIT\Operations\Add.vi"
+          "C:\Program Files\G-CLI\bin\g-cli.exe" --lv-ver 2020 --x64 "C:\Users\sadhana.suresh\Documents\GIT\Operations\Add.vi"
     
       
