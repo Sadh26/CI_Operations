@@ -27,6 +27,6 @@ jobs:
 
       - name: Trial G-CLI
         run: |
-          g-cli --lv-ver 2020 "https://github.com/Sadh26/CI_Operations.git/Operations/Add.vi"
+          g-cli --lv-ver 2020 "https://github.com/Sadh26/CI_Operations/blob/feature-gcli/Operations/Add.vi" 
         shell: cmd
     
