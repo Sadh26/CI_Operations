@@ -27,6 +27,6 @@ jobs:
 
       - name: Trial G-CLI
         run: |
-          g-cli --lv-ver 2020 "C:\Users\sadhana.suresh\Documents\GIT\Operations\Add.vi"
+          g-cli --lv-ver 2020 "${{ github.workspace }}\Operations\Add.vi"
         shell: cmd
     
